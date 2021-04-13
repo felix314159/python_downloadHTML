@@ -6,7 +6,7 @@ url = input("Enter URL: ")
 temp = urllib.request.Request(
         url,
         data=None,
-        # disguise as google bot to download FT articles
+        # disguise as google bot to access paywalled content
         headers={
             'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html',
             'Referer': 'http://www.google.com/'
